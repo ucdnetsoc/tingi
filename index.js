@@ -30,7 +30,7 @@ app.get("*", function (req, res) {
 });
 
 //port listener
-app.listen('3000', ip.address(), function () {
+app.listen('3001', ip.address(), function () {
     console.log("SERVER STARTED!!!");
     var address = ip.address() + ":3000";
     console.log("goto -> " + address);
