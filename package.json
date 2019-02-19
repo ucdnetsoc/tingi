@@ -1,0 +1,40 @@
+{
+  "name": "tingi",
+  "version": "1.0.0",
+  "description": "A music reccommender",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "node index.js && cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucdnetsoc/tingi.git"
+  },
+  "keywords": [
+    "Music",
+    "Spotify",
+    "Gigs",
+    "Concert"
+  ],
+  "author": "Tingi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucdnetsoc/tingi/issues"
+  },
+  "homepage": "https://github.com/ucdnetsoc/tingi#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-sanitizer": "^1.0.4",
+    "express-session": "^1.15.6",
+    "faker": "^4.1.0",
+    "ip": "^1.1.5",
+    "jquery": "^3.3.1",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.14",
+    "npm": "^5.10.0",
+    "request": "^2.85.0"
+  }
+}
