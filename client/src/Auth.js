@@ -11,7 +11,7 @@ class Auth extends Component {
   render() {
     return (
       <div>
-          <p>Hello world</p>
+           <button type="button" href="/app">Login with Spotify</button> 
       </div>
     );
   }
