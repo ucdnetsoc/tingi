@@ -12,6 +12,7 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Auth} />
+            <Route exact path="/login/" />
             {/* <Route exact path="/archive" render={(props) => <Archive {...props} tracks={trackList.tracks} />} />
             <Route exact path="/:trackno" component={TrackFinder} />
             <Route component={NoMatch} /> */}
