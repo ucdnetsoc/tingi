@@ -6,7 +6,26 @@ import Auth from './Auth.js';
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    response: '',
+    post: '',
+    responseToPost: 'default reponse',
+  };
+  componentDidMount() {
+    this.callApi()
+      .then(res => this.setState({ response: res.express }))
+      .catch(err => console.log(err));
+  }
+  callApi = async () => {
+    const response = await fetch('/login');
+    //const body = await response.json();
+    if (response.status !== 200) throw Error("Error");
+    return "success";
+  };
+
   render() {
+    const { username } = this.state;
     return (
       <div className="App">
         <BrowserRouter>
@@ -18,6 +37,7 @@ class App extends Component {
             <Route component={NoMatch} /> */}
           </Switch>
         </BrowserRouter>
+        <p>{this.state.responseToPost}</p>
       </div>
     );
   }
